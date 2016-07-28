@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_xx_XX>
+		<Row Tag="TXT_KEY_PROMOTION_RECON_SHORT_RANGE">
+			<Text>Short Range Recon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_RECON_SHORT_RANGE_HELP">
+			<Text>Short Range Recon (-2 visibility).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_RECON_SHORT_RANGE">
+			<Text>Short Range Recon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_RECON_LONG_RANGE">
+			<Text>Long Range Recon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_RECON_LONG_RANGE_HELP">
+			<Text>Long Range Recon (+2 visibility).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_RECON_LONG_RANGE">
+			<Text>Long Range Recon</Text>
+		</Row>
+	</Language_xx_XX>
+</GameData>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="64830ab8-3276-4f3c-916c-1e23f17993d6" version="3">
+  <Properties>
+    <Name>(2a) Community Balance Overhaul INT</Name>
+    <Stability>Beta</Stability>
+    <Teaser>(7-7) Translation of the Community Balance Overhaul.</Teaser>
+    <Description>Translation of the Community Balance Overhaul into several non-English languages.</Description>
+    <Authors>The Community</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>3</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="Community Patch" />
+	<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Community Balance Patch" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="76340f66616c328e02130570f649733e" import="0">Balance Changes/Text/xx_XX/BuildingText.sql</File>
+    <File md5="b351c7a7bac770f90e5229d75140bfdf" import="0">Balance Changes/Text/xx_XX/CivText.sql</File>
+    <File md5="3d7b8e095beea8809b5814d9207bfc8f" import="0">Balance Changes/Text/xx_XX/BuildingText.xml</File>
+	<File md5="755f90282167cdaa7e82ff8df103887c" import="0">Balance Changes/Text/xx_XX/UnitText.xml</File>
+	<File md5="c49f3fbe3ebd45f2ec71574f6a1afc37" import="0">Balance Changes/Text/xx_XX/UIText.xml</File>
+	<File md5="4fba863d9dd1bd393711ea2a15af11a5" import="0">Balance Changes/Text/xx_XX/TerrainText.xml</File>
+	<File md5="fad801afff0323b4f8ad747e4bb7a599" import="0">Balance Changes/Text/xx_XX/PromotionText.sql</File>
+	<File md5="40eedd3fddf65a308724c4d0f9476661" import="0">Balance Changes/Text/xx_XX/PolicyText.sql</File>
+	<File md5="70ad259aa96dac674df992697784b768" import="0">Balance Changes/Text/xx_XX/UIText.sql</File>
+	<File md5="34a2ff97c395f425352032f97630af08" import="0">Balance Changes/Text/xx_XX/OtherText.sql</File>
+	<File md5="ae3491dccae6923154986f911062f7fc" import="0">Balance Changes/Text/xx_XX/UnitText.sql</File>
+	<File md5="01a46c306c89794737cdd20c108ab499" import="0">Balance Changes/Text/xx_XX/ReligionText.sql</File>
+	<File md5="444bb10c8977c1aba1deee10fa0f82af" import="0">Balance Changes/Text/xx_XX/NewText.xml</File>
+	<File md5="9dc1ea063a904161185984cd994240e5" import="0">Balance Changes/Text/xx_XX/TextChanges.sql</File>
+    <File md5="bb00931249a92a9c781208741c10b74c" import="0">Modular Elements/ArchaeologistUIMods/xx_XX/MiniMapPanelText.xml</File>
+	<File md5="44e2a7674c6c0a73b80ac6b727738b8b" import="0">Modular Elements/ArchaeologistUIMods/xx_XX/UIAntiquities.xml</File>
+	<File md5="8a0891ec9f8906eab387fbd439f3dc7a" import="0">Modular Elements/Corporations/Text/xx_XX/CorporationOverviewText.xml</File>
+	<File md5="2c9c1d800bce28668c153890a3c27ac5" import="0">Modular Elements/Corporations/Text/xx_XX/CorpText.xml</File>
+    <File md5="42150ad2270f706522f70ad7325c9709" import="0">Modular Elements/Events/Text/EventText_xx_XX.xml</File>
+	<File md5="a4056565e0c62ffcf116ed6d0cf0718d" import="0">Modular Elements/TradeUIMod/xx_XX/GlobalCityStatesGifts.xml</File>
+    <File md5="3beb9b56e236fba128ddbafcca6c4a03" import="0">Modular Elements/TradeUIMod/xx_XX/UITradeRoutesEnhancements.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Modular Elements/TradeUIMod/xx_XX/UITradeRoutesEnhancements.xml</UpdateDatabase>
+      <UpdateDatabase>Modular Elements/ArchaeologistUIMods/Text/xx_XX/MiniMapPanelText.xml</UpdateDatabase>
+	  <UpdateDatabase>Modular Elements/ArchaeologistUIMods/Text/xx_XX/UIAntiquities.xml</UpdateDatabase>
+	  <UpdateDatabase>Modular Elements/TradeUIMod/xx_XX/GlobalCityStatesGifts.xml</UpdateDatabase>
+	  <UpdateDatabase>Modular Elements/Corporations/Text/xx_XX/CorpText.xml</UpdateDatabase>
+      <UpdateDatabase>Balance Changes/Text/xx_XX/NewText.xml</UpdateDatabase>
+	  <UpdateDatabase>Balance Changes/Text/xx_XX/TextChanges.sql</UpdateDatabase>
+	  <UpdateDatabase>Balance Changes/Text/xx_XX/BuildingText.sql</UpdateDatabase>
+      <UpdateDatabase>Balance Changes/Text/xx_XX/BuildingText.xml</UpdateDatabase>
+	  <UpdateDatabase>Balance Changes/Text/xx_XX/CivText.sql</UpdateDatabase>
+	  <UpdateDatabase>Balance Changes/Text/xx_XX/OtherText.sql</UpdateDatabase>
+      <UpdateDatabase>Balance Changes/Text/xx_XX/PolicyText.sql</UpdateDatabase>
+      <UpdateDatabase>Balance Changes/Text/xx_XX/PromotionText.sql</UpdateDatabase>
+	  <UpdateDatabase>Balance Changes/Text/xx_XX/UIText.sql</UpdateDatabase>
+      <UpdateDatabase>Balance Changes/Text/xx_XX/UIText.xml</UpdateDatabase>
+      <UpdateDatabase>Balance Changes/Text/xx_XX/UnitText.sql</UpdateDatabase>
+      <UpdateDatabase>Balance Changes/Text/xx_XX/UnitText.xml</UpdateDatabase>
+      <UpdateDatabase>Balance Changes/Text/xx_XX/ReligionText.sql</UpdateDatabase>
+      <UpdateDatabase>Balance Changes/Text/xx_XX/TerrainText.xml</UpdateDatabase>
+      <UpdateDatabase>Modular Elements/Corporations/Text/xx_XX/CorporationOverviewText.xml</UpdateDatabase>
+      <UpdateDatabase>Modular Elements/Events/Text/EventText_xx_XX.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
