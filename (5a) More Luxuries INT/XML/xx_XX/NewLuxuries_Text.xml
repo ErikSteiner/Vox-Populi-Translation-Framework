@@ -2,7 +2,7 @@
 
 <GameData>
 
-	<Language_en_US>
+	<Language_xx_XX>
 		<!--
 		<Replace Tag="TXT_KEY_RESOURCE_COCOA">
 			<Text>Cocoa</Text>
@@ -74,6 +74,6 @@
 		<Replace Tag="TXT_KEY_RESOURCE_GLASS_HELP">
 			<Text>Glass is only available through a Mercantile City-State.</Text>
 		</Replace>
-	</Language_en_US>
+	</Language_xx_XX>
   
 </GameData>

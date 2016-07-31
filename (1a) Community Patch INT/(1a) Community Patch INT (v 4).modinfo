@@ -3,7 +3,7 @@
   <Properties>
     <Name>(1a) Community Patch International</Name>
     <Stability>Beta</Stability>
-    <Teaser>(6-28) Translation of the Community Patch to different languages.</Teaser>
+    <Teaser>(7-27) Translation of the Community Patch to different languages.</Teaser>
     <Description>Translation of the Community Patch to different languages.</Description>
     <Authors>The Community</Authors>
     <HideSetupGame>0</HideSetupGame>
