@@ -77,10 +77,10 @@
 			<Text>A train station, railway station, railroad station, or depot (see below) is a railway facility where trains regularly stop to load or unload passengers or freight. It generally consists of at least one track-side platform and a station building (depot) providing such ancillary services as ticket sales and waiting rooms. If a station is on a single-track line, it often has a passing loop to facilitate traffic movements. The smallest stations are most often referred to as "stops" or, in some parts of the world, as "halts" (flag stops). Stations may be at ground level, underground, or elevated. Connections may be available to intersecting rail lines or other transport modes such as buses, trams or other rapid transit systems.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_TRAINSTATION_STRATEGY">
-			<Text>Provides a massive boost to City Production and Gold during the Industrial Era. Requires a direct Railroad connection to the Capital (Harbor connections do not count!) before it can be constructed, so you need to invest in your Railroad infrastructure before you can reap the benefits of this building! Cannot be built in the same City as a Seaport.</Text>
+			<Text>Provides a massive boost to City Production and Gold during the Industrial Era. Requires a direct Railroad connection, with railroad tiles, to the Capital (Harbor connections do not count!) before it can be constructed, so you need to invest in your Railroad infrastructure before you can reap the benefits of this building! Cannot be built in the same City as a Seaport.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_TRAINSTATION_HELP">
-			<Text>Requires 1 [ICON_RES_COAL] Coal. +25% [ICON_PRODUCTION] Production and +10% [ICON_GOLD] Gold in City. Requires a direct [ICON_CONNECTED] Railroad Connection to the [ICON_CAPITAL] Capital before it can be constructed.[NEWLINE][NEWLINE]City cannot have a Seaport in the City.</Text>
+			<Text>Requires 1 [ICON_RES_COAL] Coal. +25% [ICON_PRODUCTION] Production and +10% [ICON_GOLD] Gold in City. Requires a [ICON_CONNECTED] Connection via Railroad tiles to the [ICON_CAPITAL] Capital, or to a city connected to the [ICON_CAPITAL] Capital, before it can be constructed.[NEWLINE][NEWLINE]City cannot have a Seaport in the City.</Text>
 		</Row>	
 
 		<Row Tag="TXT_KEY_THEMING_BONUS_BROADCAST_TOWER_NATIONAL">
@@ -402,7 +402,7 @@
 			<Text>Empire State Building</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_EMPIRE_STATE_BUILDING_HELP">
-			<Text>Receive a free Stock Exchange in the city, and a free Great Person of your choice. Specialists in all cities produce +1 [ICON_GOLD] Gold.</Text>
+			<Text>Requires completion of the Rationalism Branch. Receive a free Stock Exchange in the city, and a free Great Person of your choice. Specialists in all cities produce +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_BUILDINGS_EMPIRE_STATE_BUILDING_TEXT">
 			<Text>The Empire State Building is a 103-story skyscraper located in Midtown Manhattan, New York City, at the intersection of Fifth Avenue and West 34th Street. It has a roof height of 1,250 feet (380 m), and with its antenna spire included, it stands a total of 1,454 feet (443 m) high.[6] Its name is derived from the nickname for New York, the Empire State. It stood as the world's tallest building for nearly 40 years, from its completion in early 1931 until the topping out of the original World Trade Center's North Tower in late 1970. Following the September 11 attacks in 2001, the Empire State Building was again the tallest building in New York (although it was no longer the tallest in the US or the world), until One World Trade Center reached a greater height on April 30, 2012. The Empire State Building is currently the fourth-tallest completed skyscraper in the United States (after the One World Trade Center, the Willis Tower and Trump International Hotel and Tower, both in Chicago), and the 25th-tallest in the world (the tallest now is Burj Khalifa, located in Dubai). It is also the fifth-tallest freestanding structure in the Americas.</Text>
@@ -509,7 +509,7 @@
 			<Text>Throne Room</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CAPITAL_THRONE_ROOM_HELP">
-			<Text>+25% [ICON_GOLDEN_AGE] Golden Age duration. Allows for a Musician Specialist in your [ICON_CAPITAL] Capital. Has a slot for a [ICON_GREAT_WORK] Great Work of Music. Can only be constructed via the Tradition Finisher.</Text>
+			<Text>+25% [ICON_GOLDEN_AGE] Golden Age duration,and +10% to all City Yields.  Allows for a Musician Specialist in your [ICON_CAPITAL] Capital. Has a slot for a [ICON_GREAT_WORK] Great Work of Music. Can only be constructed via the Tradition Finisher.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_CAPITAL_THRONE_ROOM_PEDIA">
 			<Text>A throne room is the room, often rather a hall, in the official residence of the crown, either a palace or a fortified castle, where the throne of a senior figure (usually a monarch) is set up with elaborate pomp— usually raised, often with steps, and under a canopy, both of which are part of the original notion of the Greek word thronos.</Text>
@@ -545,7 +545,7 @@
 			<Text>Court Chapel</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PALACE_COURT_CHAPEL_HELP">
-			<Text>Allows for a Musician specialist in your [ICON_CAPITAL] Capital. Has a slot for a [ICON_GREAT_WORK] Great Work of Music. Can only be constructed via the Sovereignty Policy.</Text>
+			<Text>Allows for an Artist specialist in your [ICON_CAPITAL] Capital. Has a slot for a [ICON_GREAT_WORK] Great Work of Art. Can only be constructed via the Sovereignty Policy.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PALACE_COURT_CHAPEL_PEDIA">
 			<Text>A chapel is a religious place of fellowship, prayer and worship that is attached to a larger, often nonreligious institution or that is considered an extension of a primary religious institution. It may be part of a larger structure or complex, such as a college, hospital, palace, prison, funeral home, church, synagogue or mosque, located on board a military or commercial ship, or it may be an entirely free-standing building, sometimes with its own grounds. Many military installations have chapels for the use of military personnel, normally under the leadership of a military chaplain.</Text>
@@ -567,7 +567,7 @@
 			<Text>The ancient Harappan and Indus Valley Civilizations of Northwest South Asia, including Pakistan and parts of India, were prominent in hydraulic engineering, and had many water supply and sanitation devices that were the first of their kind. Among other things, they contained the world's earliest known system of flush toilets. These existed in many homes, and were connected to a common sewerage pipe. Most houses also had private wells. City walls functioned as a barrier against floods, and massive reservoirs were often constructed along these walls to collect this floodwater to save for droughts.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDUS_CANAL_HELP">
-			<Text>Unique Indian replacement for the Aqueduct. Carries over 20% of [ICON_FOOD] Food after City growth. Grants +1 [ICON_PRODUCTION] Production from Flood Plains and +1 [ICON_FOOD] Food from Lakes and Farms. Reduces [ICON_HAPPINESS_3] Poverty slightly.</Text>
+			<Text>Unique Indian replacement for the Aqueduct. Carries over 20% of [ICON_FOOD] Food after City growth. Grants +1 [ICON_PRODUCTION] Production from Flood Plains and +2 [ICON_FOOD] Food from Lakes, Oases, and Farms. Reduces [ICON_HAPPINESS_3] Poverty slightly.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_INDUS_CANAL_STRATEGY">
 			<Text>Build these unique Aqueducts to rapidly increase your city's population size and productivity, especially if the city is settled on or near Flood Plainss.</Text>
@@ -579,10 +579,10 @@
 			<Text>A dojo is a Japanese term which literally means "place of the way". Initially, dōjōs were adjunct to temples. The term can refer to a formal training place for any of the Japanese do arts[which?] but typically it is considered the formal gathering place for students of any Japanese martial arts style such as karate, judo, or samurai, to conduct training, examinations and other related encounters. The concept of a dōjō only referring to a training place specifically for Asian martial arts is a Western concept; in Japan, any physical training facility, including professional wrestling schools, may be called dōjō because of its close martial arts roots.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DOJO_HELP">
-			<Text>Unique Japanese replacement for the Armory. Reduces [ICON_HAPPINESS_3] Crime, and does not require a Barracks in the City.[NEWLINE][NEWLINE]Grants +25 Experience to all military units trained in this city. All Melee and Gun units trained in this city receive the [COLOR_POSITIVE_TEXT]Eight Virtues of Bushido[ENDCOLOR] Promotion.[NEWLINE]Nearby [ICON_RES_IRON] Iron: +2 [ICON_CULTURE] Culture, +2 [ICON_PRODUCTION] Production.[NEWLINE]Nearby [ICON_RES_HORSE] Horses: +2 [ICON_CULTURE] Culture, +2 [ICON_PRODUCTION] Production.</Text>
+			<Text>Unique Japanese replacement for the Armory. Reduces [ICON_HAPPINESS_3] Crime, and does not require a Barracks in the City.[NEWLINE][NEWLINE]Grants +25 Experience to all military units trained in this city. All Mounted, Melee, Gun, and Armor units trained in this city receive the [COLOR_POSITIVE_TEXT]Eight Virtues of Bushido[ENDCOLOR] Promotion.[NEWLINE][NEWLINE]When a Unit created by this City levels up, gain [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, and [ICON_PEACE] Faith based on its current level.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DOJO_STRATEGY">
-			<Text>Build these unique Armories to produce dominant military units, and to generate additional Culture and Production. Does not require a Barracks. All Melee and Gun units trained in this city receive the Eight Virtues of Bushido Promotion, which offers one of eight possible promotions to these unit types after their first combat.</Text>
+			<Text>Build these unique Armories to produce dominant military units, and to gain Culture, Science, and Faith from leveling up your military units. Higher level units generate much more of these yields than lower-level units, so it is worthwhile to train your units and try to keep them alive! Does not require a Barracks. All Melee, Mounted, Gun, and Armor units trained in this city receive the Eight Virtues of Bushido Promotion, which offers one of eight possible promotions to these unit types after their first combat and increases the Unit's power as it takes damage.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_ODEON">
 			<Text>Acropolis</Text>
@@ -627,10 +627,10 @@
 			<Text>A foundry is a factory that produces metal castings. Metals are cast into shapes by melting them into a liquid, pouring the metal in a mold, and removing the mold material or casting after the metal has solidified as it cools. The most common metals processed are aluminium and cast iron. However, other metals, such as bronze, brass, steel, magnesium, and zinc, are also used to produce castings in foundries. In this process, parts of desired shapes and sizes can be formed. In the context of war, foundries were essential to the production of cannonry and other essential siege equipment.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIEGE_WORKSHOP_HELP">
-			<Text>+1 [ICON_PRODUCTION] Production from Mines worked by this City. +50% [ICON_PRODUCTION] Production towards Siege units, and all Siege units trained in this City receive the [COLOR_POSITIVE_TEXT]Volley[ENDCOLOR] Promotion for free.[NEWLINE][NEWLINE]When you construct a Unit in this City, gain 20 [ICON_RESEARCH] Science, scaling with Era.[NEWLINE]Nearby [ICON_RES_IRON] Iron: +1 [ICON_PRODUCTION] Production, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COPPER] Copper: +1 [ICON_PRODUCTION] Production, +1 [ICON_GOLD] Gold.</Text>
+			<Text>+1 [ICON_PRODUCTION] Production from Mines worked by this City. +50% [ICON_PRODUCTION] Production towards Siege units, and all Siege units trained in this City receive the [COLOR_POSITIVE_TEXT]Volley[ENDCOLOR] Promotion for free.[NEWLINE][NEWLINE]When you construct a Unit in this City, gain [ICON_RESEARCH] Science equal to 20% of the Unit's [ICON_PRODUCTION] Production cost.[NEWLINE]Nearby [ICON_RES_IRON] Iron: +1 [ICON_PRODUCTION] Production, +1 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COPPER] Copper: +1 [ICON_PRODUCTION] Production, +1 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SIEGE_WORKSHOP_STRATEGY">
-			<Text>Unique Ottoman replacement for the Forge. Generates extra Science, produces Siege units much more quickly than normal, and grants them the [COLOR_POSITIVE_TEXT]Volley[ENDCOLOR] Promotion for free. Use these attributes to build a massive force of artillery to take down an enemy's walls and conquer their lands!</Text>
+			<Text>Unique Ottoman replacement for the Forge. Generates extra Science from producing military units, produces Siege units much more quickly than normal, and grants them the [COLOR_POSITIVE_TEXT]Volley[ENDCOLOR] Promotion for free. Use these attributes to build a massive force of artillery to take down an enemy's walls and conquer their lands!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MOMA">
 			<Text>The Smithsonian</Text>
@@ -645,10 +645,10 @@
 			<Text>The Smithsonian Institution, established in 1846 "for the increase and diffusion of knowledge," is a group of museums and research centers administered by the Government of the United States. Originally organized as the "United States National Museum," that name ceased to exist as an administrative entity in 1967. Termed "the nation's attic" for its eclectic holdings of 138 million items, the Institution's nineteen museums, nine research centers, and zoo include historical and architectural landmarks, mostly located in the District of Columbia. Additional facilities are located in Arizona, Maryland, Massachusetts, New York City, Virginia, and Panama. A further 170 museums are Smithsonian Affiliates. The Institution's thirty million annual visitors are admitted without charge. Funding comes from the Institution's endowment, private and corporate contributions, membership dues, government support, as well as retail, concession and licensing revenues. Institution publications include Smithsonian and Air and Space magazines.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MOMA_HELP">
-			<Text>Unique American replacement for the Hermitage. A city must have a Museum before it can construct the Smithsonian.[NEWLINE][NEWLINE]+25% [ICON_CULTURE] Culture in the City, and 50% of the [ICON_CULTURE] Culture from Great Works, World Wonders, Natural Wonders, and Improvements is added to the [ICON_TOURISM] Tourism output of the city. Boosts [ICON_CULTURE] Culture and [ICON_RESEARCH] Science output of Museums in all Cities by +5. Contains 3 Slots for Great Works of Art or Artifacts.[NEWLINE][NEWLINE]Requires a Museum in the City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own. [NEWLINE][NEWLINE]+5 [ICON_RESEARCH] Science and +5 [ICON_CULTURE] Culture if Themed.</Text>
+			<Text>Unique American replacement for the Hermitage. [NEWLINE][NEWLINE]+25% [ICON_CULTURE] Culture in the City, and 50% of the [ICON_CULTURE] Culture from Great Works, World Wonders, Natural Wonders, and Improvements is added to the [ICON_TOURISM] Tourism output of the city. Boosts [ICON_CULTURE] Culture and [ICON_RESEARCH] Science output of Museums and Broadcast Towers in all Cities by +5. Contains 3 Slots for Great Works of Art or Artifacts.[NEWLINE][NEWLINE]Requires a Museum in the City. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own. [NEWLINE][NEWLINE]+5 [ICON_RESEARCH] Science and +5 [ICON_CULTURE] Culture if Themed.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_MOMA_STRATEGY">
-			<Text>Unique American replacement for the Hermitage. In addition to the bonuses of the Hermitage, the Smithsonian boosts Culture and Tourism in the City greatly. The Smithsonian also boosts the Culture and Science output of all Museums in your Empire. The Smithsonian is avaialable later than the Hermitage, however, and requires a Museum instead of an Opera House. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
+			<Text>Unique American replacement for the Hermitage. In addition to the bonuses of the Hermitage, the Smithsonian boosts Culture and Tourism in the City greatly. The Smithsonian also boosts the Culture and Science output of all Museums and Broadcast Towers in your Empire. The Smithsonian is available slightly later than the Hermitage, however. The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_MISSION">
