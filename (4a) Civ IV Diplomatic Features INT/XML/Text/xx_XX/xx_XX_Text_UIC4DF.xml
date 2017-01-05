@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 4/25/2013 11:35:27 PM -->
 <GameData>
-	<language_xx_XX>
+	<Language_xx_XX>
 		<Row Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_SHARE_OPINION">
 			<Text>What do you think of...</Text>
 		</Row>
@@ -406,7 +406,7 @@
 			<Text>2. One of the following conditions:</Text>
 		</Row>
 		<Row Tag="TXT_KEY_VO_INDEPENDENCE_POSSIBLE_CITY_PERCENT_TT">
-			<Text>[TAB][ICON_BULLET]Vassal's team has {1_CityPercent}% or less of Cities when vassalage started. (currently {2_Percent})</Text>
+			<Text>[TAB][ICON_BULLET]Vassal's team has {1_CityPercent}% or more of Cities when vassalage started. (currently {2_Percent})</Text>
 		</Row>
 		<Row Tag="TXT_KEY_VO_INDEPENDENCE_POSSIBLE_POP_PERCENT_TT">
 			<Text>[TAB][ICON_BULLET]Vassal's team has {1_PopPercent}% or more of Population than when vassalage started. (currently {2_Percent})</Text>
@@ -810,5 +810,5 @@
 		<Row Tag="TXT_KEY_TP_GOLD_VASSAL_TAX">
 			<Text>{1_Num} from Vassal Taxes.</Text>
 		</Row>
-	</language_xx_XX>
+	</Language_xx_XX>
 </GameData>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 4/25/2013 4:03:12 PM -->
 <GameData>
-	<language_xx_XX>
+	<Language_xx_XX>
 		<Row Tag="TXT_KEY_GENERIC_HOSTILE_REPEAT_SHARE_OPINION_NO_1">
 			<Text>Why do you continue to waste my time with this nonsense? Begone!</Text>
 		</Row>
@@ -358,5 +358,5 @@
 		<Row Tag="TXT_KEY_RESPONSE_VASSAL_TAXES_LOWERED_AI_MASTER_1">
 			<Text>I am pleased to announce that I've lowered your taxes. Our empire can thrive just fine without your help, and I see no need to strain our relations unnecessarily.</Text>
 		</Row>
-	</language_xx_XX>
+	</Language_xx_XX>
 </GameData>
