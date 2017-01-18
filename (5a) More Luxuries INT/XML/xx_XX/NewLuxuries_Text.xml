@@ -45,7 +45,7 @@
 			<Text>Olives</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_RESOURCE_OLIVE_TEXT">
-			<Text>The olive is a species of small tree in the family Oleaceae, native to the coastal areas of the eastern Mediterranean Basin as well as northern Iraq, and northern Iran at the south of the Caspian Sea. Its fruit, also called the olive, is of major agricultural importance in the Mediterranean region as the source of olive oil. The olive has been the symbol of peace, wisdom, glory, fertility, power and purity. Olive oil has long been considered sacred, and even today,  it is still used in many religious ceremonies. Over the years, the olive has been the symbol of peace, wisdom, glory, fertility, power and purity.</Text>
+			<Text>The olive is a species of small tree in the family Oleaceae, native to the coastal areas of the eastern Mediterranean Basin as well as northern Iraq, and northern Iran at the south of the Caspian Sea. Its fruit, also called the olive, is of major agricultural importance in the Mediterranean region as the source of olive oil. The olive has been the symbol of peace, wisdom, glory, fertility, power and purity. Olive oil has long been considered sacred, and even today,  it is still used in many religious ceremonies.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_RESOURCE_PERFUME">
 			<Text>Perfume</Text>
