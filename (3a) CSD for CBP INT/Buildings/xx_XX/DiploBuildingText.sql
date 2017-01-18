@@ -8,7 +8,7 @@ SELECT 'TXT_KEY_BUILDING_COURT_SCRIBE_STRATEGY', 'This National Wonder is unique
 
 INSERT INTO language_xx_XX (
   Tag, Text)
-SELECT 'TXT_KEY_BUILDING_CHANCERY_HELP', '+1 [ICON_RES_PAPER] Paper. +10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants Promotion [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] for Diplomatic Units in the city in which it is built. [NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_CULTURE] Culture for every Ally.';
+SELECT 'TXT_KEY_BUILDING_CHANCERY_HELP', '+1 [ICON_RES_PAPER] Paper. +10% [ICON_PRODUCTION] Production of Diplomatic Units. Grants Promotion [COLOR_POSITIVE_TEXT]Royal Signet[ENDCOLOR] for Diplomatic Units in the city in which it is built. [NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold in City for every City-State Friend, and +2 [ICON_PRODUCTION] Production for every Ally.';
 
 INSERT INTO language_xx_XX (
   Tag, Text)
@@ -20,4 +20,4 @@ SELECT 'TXT_KEY_BUILDING_WIRE_SERVICE_STRATEGY', 'Increases Diplomatic Unit prod
 
 INSERT INTO language_xx_XX (
   Tag, Text)
-SELECT 'TXT_KEY_BUILDING_WIRE_SERVICE_HELP', '+1 [ICON_RES_PAPER] Paper. +20% [ICON_PRODUCTION] Production of Diplomatic Units. Grants Promotion [COLOR_POSITIVE_TEXT]Wire Service[ENDCOLOR] for Diplomatic Units in the city in which it is built. [NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production in City for every City-State Friend, and +2 [ICON_RESEARCH] Science for every Ally.';
+SELECT 'TXT_KEY_BUILDING_WIRE_SERVICE_HELP', '+1 [ICON_RES_PAPER] Paper. +20% [ICON_PRODUCTION] Production of Diplomatic Units. Grants Promotion [COLOR_POSITIVE_TEXT]Wire Service[ENDCOLOR] for Diplomatic Units in the city in which it is built. [NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture in City for every City-State Friend, and +2 [ICON_RESEARCH] Science for every Ally.';
