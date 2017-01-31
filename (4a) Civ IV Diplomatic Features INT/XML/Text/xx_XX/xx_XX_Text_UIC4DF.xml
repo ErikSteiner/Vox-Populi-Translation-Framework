@@ -350,6 +350,9 @@
 		<Row Tag="TXT_KEY_DIPLO_VASSAL_OF">
 			<Text>[COLOR_GREY]Vassal of {1_CivName:textkey}[ENDCOLOR]</Text>
 		</Row>
+		<Row Tag="TXT_KEY_DIPLO_MASTER_OF">
+			<Text>[COLOR_GREY]Master of {1_CivName:textkey}[ENDCOLOR]</Text>
+		</Row>
 		<Row Tag="TXT_KEY_DIPLO_YOU_ARE_VASSAL">
 			<Text>[COLOR_GREY]You are their Vassal[ENDCOLOR]</Text>
 		</Row>
