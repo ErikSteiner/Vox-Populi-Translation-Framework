@@ -38,7 +38,7 @@ SET Text = 'The Bazaar is the Arabian unique building, replacing the Market. The
 WHERE Tag = 'TXT_KEY_BUILDING_BAZAAR_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'When you complete a Historic Event, your [ICON_CAPITAL] Capital gains +2 [ICON_RESEARCH] Science and +1 [ICON_CULTURE] Culture, and 20% towards the progress of a random [ICON_GREAT_PEOPLE] Great Person. [ICON_TOURISM] Tourism from Historic Events increased by 15%.'
+SET Text = 'When you complete a Historic Event, your [ICON_CAPITAL] Capital gains +1 [ICON_RESEARCH] Science and +1 [ICON_CULTURE] Culture, and 20% towards the progress of a random [ICON_GREAT_PEOPLE] Great Person. [ICON_TOURISM] Tourism from Historic Events increased by 15%.'
 WHERE Tag = 'TXT_KEY_TRAIT_LAND_TRADE_GOLD2' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -46,18 +46,18 @@ SET Text = 'One Thousand and One Nights'
 WHERE Tag = 'TXT_KEY_TRAIT_LAND_TRADE_GOLD2_SHORT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Fast Medieval ranged Unit, weak to Pikemen. Only the Arabians may build it. It is much stronger (defensively) than the Heavy Skirmisher which it replaces.'
+SET Text = 'Fast Medieval ranged Unit, weak to Pikemen. Only the Arabians may build it. It is stronger than the Heavy Skirmisher which it replaces, can retreat from melee combat, and does not require [ICON_RES_HORSE] Horses. Starts with [COLOR_POSITIVE_TEXT]Splash Damage II.[ENDCOLOR]'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_CAMEL_ARCHER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'The Camel Archer is the Arabian unique unit, replacing the Heavy Skirmisher. The Camel Archer is a powerful ranged attack unit, allowing it to do damage to enemies 1 hex away. It can move after combat. As a mounted unit, the Camel Archer is vulnerable to Pikemen, though nowhere near as vulnerable as the Heavy Skirmisher.'
+SET Text = 'The Camel Archer is the Arabian unique unit, replacing the Heavy Skirmisher. The Camel Archer is a powerful ranged attack unit that starts with Splash Damage II, allowing it to do damage to groups of enemies 1 hex away. It can move after combat, retreats from melee combat, and does not require [ICON_RES_HORSE] Horses to be constructed. As a mounted unit, the Camel Archer is vulnerable to Pikemen.'
 WHERE Tag = 'TXT_KEY_UNIT_ARABIAN_CAMELARCHER_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 --------------------
 -- Assyria
 --------------------
 UPDATE language_xx_XX
-SET Text = '+1 [ICON_RESEARCH] Science for every 2 [ICON_CITIZEN] Citizens in the City, and all Libraries produce +2 [ICON_RESEARCH] Science. Contains 3 slots for Great Works of Writing, and comes with both a free Great Work and a free Library in the City. Every Great Work of Writing you control grants +5 XP to units created in any City (maximum of 45 XP).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own. [NEWLINE][NEWLINE]+3 [ICON_PRODUCTION] Production if Themed.'
+SET Text = '+1 [ICON_RESEARCH] Science for every 2 [ICON_CITIZEN] Citizens in the City, and all Libraries produce +3 [ICON_RESEARCH] Science. Contains 3 slots for Great Works of Writing, and comes with both a free Great Work and a free Library in the City. Every Great Work of Writing you control grants +5 XP to units created in any City (maximum of 45 XP).[NEWLINE][NEWLINE]The [ICON_PRODUCTION] Production Cost and [ICON_CITIZEN] Population Requirements increase based on the number of cities you own. [NEWLINE][NEWLINE]+3 [ICON_PRODUCTION] Production if Themed.'
 WHERE Tag = 'TXT_KEY_BUILDING_ROYAL_LIBRARY_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
  
 UPDATE language_xx_XX
@@ -65,7 +65,7 @@ SET Text = 'In addition to the [ICON_RESEARCH] Science output of the School of P
 WHERE Tag = 'TXT_KEY_BUILDING_ROYAL_LIBRARY_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX 
-SET Text = 'Unique Assyrian support Unit. Nearby owned Units gain +40% [ICON_STRENGTH] Combat Strength versus Cities when adjacent to an enemy City, or +20% [ICON_STRENGTH] Combat Strength if two tiles from an enemy City. Starts with [COLOR_POSITIVE_TEXT]Medic I[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Extra Sight[ENDCOLOR]. Cannot attack or defend itself.[NEWLINE][NEWLINE]May only have [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Siege Towers active at one time.'
+SET Text = 'Unique Assyrian support Unit. Nearby owned Units gain +40% [ICON_STRENGTH] Combat Strength versus Cities when adjacent to an enemy City, or +20% [ICON_STRENGTH] Combat Strength if two tiles from an enemy City. Starts with [COLOR_POSITIVE_TEXT]Medic I-II[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Extra Sight[ENDCOLOR]. Cannot attack or defend itself.[NEWLINE][NEWLINE]May only have [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Siege Towers active at one time.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_ASSYRIAN_SIEGE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX 
@@ -112,7 +112,7 @@ WHERE Tag = 'TXT_KEY_UNIT_AUSTRIAN_HUSSAR_STRATEGY' AND EXISTS (SELECT * FROM CO
 -- Aztecs
 --------------------
 UPDATE language_xx_XX
-SET Text = '+1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production for every 2 [ICON_CITIZEN] Citizens in the City. Each worked Lake tile provides +2 [ICON_FOOD] Food, and River tiles produce +1 [ICON_FOOD] Food.'
+SET Text = '+2 [ICON_FOOD] Food and [ICON_PRODUCTION] Production for every 5 [ICON_CITIZEN] Citizens in the City. Each worked Lake tile provides +2 [ICON_FOOD] Food, and River tiles produce +1 [ICON_FOOD] Food.'
 WHERE Tag = 'TXT_KEY_BUILDING_FLOATING_GARDENS_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -121,6 +121,7 @@ WHERE Tag = 'TXT_KEY_TRAIT_CULTURE_FROM_KILLS' AND EXISTS (SELECT * FROM COMMUNI
 
 UPDATE language_xx_XX 
 SET Text = 'Fairly weak early-game military Unit. Only the Aztecs may build it. This Unit has higher [ICON_STRENGTH] Combat Strength than the Warrior, fights more effectively in Forests and Jungles, and heals damage when it kills an enemy Unit.'
+
 WHERE Tag = 'TXT_KEY_UNIT_HELP_JAGUAR' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 --------------------
 -- Babylon
@@ -138,11 +139,16 @@ SET Text = 'The Bowman is the Babylonian Unique Unit, replacing the Composite Bo
 WHERE Tag = 'TXT_KEY_CIV5_BABYLON_BOWMAN_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_CIVS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'The Walls of Babylon increase the damage output of all the city''s ranged attacks and increase the city''s defense.'
+SET Text = 'The Walls of Babylon increase the damage output of all the city''s ranged attacks and increase the city''s defense. Increases Military Units supplied by this City''s population by 10%.'
 WHERE Tag = 'TXT_KEY_CIV5_BABYLON_WALLS_INFO' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
+INSERT INTO language_xx_XX (
+Tag, Text)
+SELECT 'TXT_KEY_BUILDING_BABYLON_WALLS_HELP', 'Military Units supplied by this City''s population increased by 10%.'
+WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
+
 UPDATE language_xx_XX
-SET Text = 'The Walls of Babylon are a Babylonian Unique Building, replacing the standard city Walls. The Walls of Babylon increase Defense Strength in a city by 15 and Hit Points by 75, both values much higher than standard Walls. The Walls of Babylon also provide a Scientist specialist slot and Science.'
+SET Text = 'The Walls of Babylon are a Babylonian Unique Building, replacing the standard city Walls. The Walls of Babylon increase Defense Strength in a city by 15 and Hit Points by 75, both values much higher than standard Walls. Increases Military Unit Supply Cap from City Population by 10%. The Walls of Babylon also provide a Scientist specialist slot and Science.'
 WHERE Tag = 'TXT_KEY_CIV5_BABYLON_WALLS_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 --------------------
@@ -342,11 +348,11 @@ WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDIN
 -- France
 --------------------
 UPDATE language_xx_XX
-SET Text = '50% of [ICON_CAPITAL] Capital [ICON_CULTURE] Culture counts as [ICON_TOURISM] Tourism during [ICON_GOLDEN_AGE] Golden Ages. When you conquer a city, steal [ICON_GREAT_WORK] Great Works from the owner and gain a temporary boost to [ICON_CULTURE] Culture and [ICON_PRODUCTION] Production.'
+SET Text = '+10% [ICON_STRENGTH]/[ICON_RANGE_STRENGTH] Damage versus Units and Cities for every attack against them during a turn. When you conquer a city, gain [ICON_GREAT_WORK] Great Works from owner and a short boost to [ICON_CULTURE] Culture and [ICON_PRODUCTION] Production.'
 WHERE Tag = 'TXT_KEY_TRAIT_ENHANCED_CULTURE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Riches of Conquest'
+SET Text = 'Esprit de Corps'
 WHERE Tag = 'TXT_KEY_TRAIT_ENHANCED_CULTURE_SHORT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX 
@@ -397,7 +403,6 @@ WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS
 INSERT INTO language_xx_XX (Text, Tag)
 SELECT '({1_Num} Turn(s) remaining)' , 'TXT_KEY_PRODMOD_TRAIT_BONUS_CONQUEST_TURNS'
 WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
-
 
 
 UPDATE language_xx_XX
@@ -492,7 +497,7 @@ SET Text = 'Horse Archers are fast ranged units, deadly on open terrain. They st
 -- Inca
 --------------------
 UPDATE language_xx_XX
-SET Text = 'Units ignore terrain costs when on Hills and may cross Mountains. Cities, Roads, and Railroads may be built on Mountains, and Mountains produce [ICON_RESEARCH] Science, [ICON_GOLD] Gold, and [ICON_PEACE] Faith, scaling with Era.'
+SET Text = 'Units ignore terrain costs when on Hills and may cross Mountains. Cities, Roads, and Railroads may be built on Mountains, and Mountains produce [ICON_RESEARCH] Science and [ICON_PEACE] Faith, scaling with Era.'
 WHERE Tag = 'TXT_KEY_TRAIT_GREAT_ANDEAN_ROAD' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX 
@@ -511,7 +516,7 @@ WHERE Tag = 'TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_HELP' AND EXISTS (SELECT * F
 -- India
 --------------------
 UPDATE language_xx_XX
-SET Text = 'Starts with a Pantheon. Each Follower of your primary Religion in a City increases Religious Pressure and [ICON_FOOD] Growth in that City. Cannot build Missionaries or Inquisitors..'
+SET Text = 'Starts with a Pantheon, and [ICON_PROPHET] Great Prophets require 50% less [ICON_PEACE] Faith. Each Follower of your primary Religion in a City increases Religious Pressure and [ICON_FOOD] Growth. Cannot build Missionaries.'
 WHERE Tag = 'TXT_KEY_TRAIT_POPULATION_GROWTH' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX 
@@ -522,11 +527,11 @@ SET Text = 'A terrifying sight on the battlefield, often as dangerous to its own
 WHERE Tag = 'TXT_KEY_CIV5_ANTIQUITY_INDIANWARELEPHANT_TEXT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX 
-SET Text = 'A ponderous, mounted Ranged Unit highly effective on flat ground. Only the Indians may build it. This Unit has a higher [ICON_STRENGTH] Combat and Ranged Strength than the Cuirassier, but has lower Movement speed and cannot move after attacking. Does not require [ICON_RES_HORSE] Horses, is available earlier than the Cuirassier.' 
+SET Text = 'A ponderous, mounted Ranged Unit highly effective on flat ground. Only the Indians may build it. This Unit has a higher [ICON_STRENGTH] Combat and Ranged Strength than the Cuirassier, but cannot move after attacking. Does not require [ICON_RES_HORSE] Horses, is available earlier than the Cuirassier.' 
 WHERE Tag = 'TXT_KEY_UNIT_HELP_INDIAN_WAR_ELEPHANT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX 
-SET Text = 'The Naga-Malla (Fighting Elephant) is the Indian unique unit, replacing the Cuirassier. It is more powerful (if slower) than the Cuirassier, and cannot move after attacking. Does not require Horses, and is available earlier than the Cuirassier. A mounted unit, the Naga-Malla is quite vulnerable to the Pikeman.' 
+SET Text = 'The Naga-Malla (Fighting Elephant) is the Indian unique unit, replacing the Cuirassier. It is more powerful than the Cuirassier, but cannot move after attacking. Does not require Horses, and is available earlier than the Cuirassier. A mounted unit, the Naga-Malla is quite vulnerable to the Pikeman.' 
 WHERE Tag = 'TXT_KEY_UNIT_INDIAN_WARELEPHANT_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE Traits
@@ -607,7 +612,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_LONGHOUSE_STRATEGY' AND EXISTS (SELECT * FROM COMM
 -- Japan
 --------------------
 UPDATE language_xx_XX
-SET Text = 'Gain [ICON_GREAT_WORK] Great Writer/Artist/Musician Points in [ICON_CAPITAL] Capital when [ICON_GREAT_GENERAL] Great Generals or [ICON_GREAT_ADMIRAL] Admirals are born. Receive -50% [ICON_TOURISM] Tourism from Civs that lack a [ICON_INTERNATIONAL_TRADE] Trade Route from you, and they cannot send you [ICON_INTERNATIONAL_TRADE] Trade Routes.'
+SET Text = 'When Units promote, gain [ICON_CULTURE] Culture and [ICON_RESEARCH] Science based on their current Level. Civs without [ICON_INTERNATIONAL_TRADE] Trade Routes from you cannot send you [ICON_INTERNATIONAL_TRADE] Trade Routes and have a -50% [ICON_TOURISM] Tourism penalty with you.'
 WHERE Tag = 'TXT_KEY_TRAIT_FIGHT_WELL_DAMAGED' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -761,7 +766,7 @@ WHERE Tag = 'TXT_KEY_UNIT_HELP_BERBER_CAVALRY' AND EXISTS (SELECT * FROM COMMUNI
 -- Netherlands
 --------------------
 UPDATE language_xx_XX
-SET Text = '+4 [ICON_CULTURE] Culture for each different Luxury Resource you import from other Civilizations and City-States, +4 [ICON_GOLD] Gold for each different Luxury Resource you export to other Civilizations. Bonuses scale with Era.'
+SET Text = '+4 [ICON_CULTURE] Culture for each different Luxury Resource you import from other Civilizations and City-States, +6 [ICON_GOLD] Gold for each different Luxury Resource you export to other Civilizations. Bonuses scale with Era.'
 WHERE Tag = 'TXT_KEY_TRAIT_LUXURY_RETENTION' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -823,11 +828,11 @@ SET Text = 'Ancient Era Unit which specializes in defeating Mounted Units. Only 
 -- Poland
 --------------------
 UPDATE language_xx_XX
-SET Text = 'Unique Polish Stable replacement. +25% [ICON_PRODUCTION] Production and +15 XP for Mounted Melee Units.[NEWLINE]Nearby [ICON_RES_HORSE] Horses: +3 [ICON_PRODUCTION] Production, +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +3 [ICON_PRODUCTION] Production, +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COW] Cattle: +3 [ICON_PRODUCTION] Production, +3 [ICON_GOLD] Gold.'
+SET Text = 'Unique Polish Stable replacement. 1 free [ICON_RES_HORSE] Horse, +50% [ICON_PRODUCTION] Production, and +15 XP for Mounted Melee Units. Increases the Military Unit Supply Cap from Population in the City by 10%.[NEWLINE]Nearby [ICON_RES_HORSE] Horses: +3 [ICON_PRODUCTION] Production, +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_SHEEP] Sheep: +3 [ICON_PRODUCTION] Production, +3 [ICON_GOLD] Gold.[NEWLINE]Nearby [ICON_RES_COW] Cattle: +3 [ICON_PRODUCTION] Production, +3 [ICON_GOLD] Gold.'
 WHERE Tag = 'TXT_KEY_BUILDING_DUCAL_STABLE_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Every time you unlock 16 Technologies, gain a free Social Policy.[NEWLINE][ICON_HAPPINESS_3] Unhappiness from [ICON_STRENGTH] Crime reduced in all Cities by 10%.'
+SET Text = 'Every time you reach a new Era, gain a free Social Policy. [ICON_HAPPINESS_3] Unhappiness from [ICON_STRENGTH] Crime reduced in all Cities by 10%.'
 WHERE Tag = 'TXT_KEY_TRAIT_SOLIDARITY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 --------------------
@@ -889,7 +894,7 @@ SET Text = ' The Ballista is an excellent siege weapon. It is extremely useful a
  WHERE Tag = 'TXT_KEY_UNIT_ROMAN_BALLISTA_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Strong, front-line land Unit of the Classical Era. Only the Romans may build it. This Unit has a higher [ICON_STRENGTH] Combat Strength than the Swordsman, which it replaces, and gains the Cover I promotion for free.'
+SET Text = 'Strong, front-line land Unit of the Classical Era. Only the Romans may build it. This Unit has a higher [ICON_STRENGTH] Combat Strength than the Swordsman, which it replaces, and gains the Cover I promotion for free. It also starts with the Pilum promotion, which deals 10 damage to all adjacent enemies every turn while fortified.'
 WHERE Tag = 'TXT_KEY_UNIT_HELP_ROMAN_LEGION' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 	
 UPDATE language_xx_XX
@@ -902,7 +907,7 @@ WHERE Tag = 'TXT_KEY_UNIT_ROMAN_LEGION_STRATEGY' AND EXISTS (SELECT * FROM COMMU
 -- Russia
 --------------------
 UPDATE language_xx_XX
-SET Text = '+1 [ICON_PRODUCTION] Production to Camps, Mines, and Lumbermills. Decreases tile cost in the City by 25%. Enemy land Units must expend 1 extra [ICON_MOVES] movement per Tile if they move into a Tile worked by this City.[NEWLINE][NEWLINE]Increases city Defense Strength by 25 and Hit Points by 200.'
+SET Text = '+1 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold to Camps, Mines, and Lumbermills. Decreases tile [ICON_CULTURE] Culture and [ICON_GOLD] Gold cost in the City by 50%. Enemy land Units must expend 1 extra [ICON_MOVES] movement per Tile if they move into a Tile worked by this City.[NEWLINE][NEWLINE]Increases city Defense Strength by 25 and Hit Points by 200. Military Units supplied by this City''s population increased by 10%.'
 WHERE Tag = 'TXT_KEY_BUILDING_KREPOST_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -910,7 +915,7 @@ SET Text = 'Ostrog'
 WHERE Tag = 'TXT_KEY_BUILDING_KREPOST_DESC' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'The Ostrog is the Russian unique building, replacing the Arsenal. In addition to the normal bonuses of the Arsenal, the Ostrog increases cultural border growth by 50% and grants +1 Production to Camps, Mines, and Lumbermills. It also causes enemy land units to expend 1 extra movement per tile if they move into a tile worked by this city. The Production, Gold and Maintenance requirements of the Ostrog are also greatly reduced, allowing you to quickly build it in newly-founded Cities. It is quite worthwhile to construct these useful buildings in all Russian cities, but especially in cities on the the Russian frontier.'
+SET Text = 'The Ostrog is the Russian unique building, replacing the Arsenal. In addition to the normal bonuses of the Arsenal, the Ostrog is cheaper, unlocks earlier, decreases culture and gold tile costs by 50%, and grants +1 Production and Gold to Camps, Mines, and Lumbermills. Increases Military Units supplied by this City''s population by 10%. It also causes enemy land units to expend 1 extra movement per tile if they move into a tile worked by this city. The Production, Gold and Maintenance requirements of the Ostrog are also greatly reduced, allowing you to quickly build it in newly-founded Cities. It is quite worthwhile to construct these useful buildings in all Russian cities, but especially in cities on the the Russian frontier.'
 WHERE Tag = 'TXT_KEY_BUILDINGS_KREPOST_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -955,14 +960,25 @@ SET Text = 'Medieval Era unit that specializes in scouting and colonizing advanc
 --------------------
 -- Shoshone
 --------------------
-
 UPDATE language_xx_XX 
-SET Text = 'The Comanche Rider can only be gifted by Minor Civilizations. May pillage tiles for free, and has a chance to retreat when attacked via melee.'
+SET Text = 'The Comanche Rider is the unique unit of the Shoshone. May pillage tiles for free, and has a chance to retreat when attacked via melee.'
  WHERE Tag = 'TXT_KEY_UNIT_HELP_SHOSHONE_COMANCHE_RIDERS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 UPDATE language_xx_XX 
-SET Text = 'Faster than Cavalry. Can only be gifted by Minor Civilizations. Is excellent at hit-and-run tactics versus enemy Improvements.'
+SET Text = 'The Comanche Riders replaces the Cavalry, and only the Shoshone may build it. Cheaper and faster than the base unit. May pillage tiles for free, and has a chance to retreat when attacked via melee.'
  WHERE Tag = 'TXT_KEY_UNIT_SHOSHONE_COMANCHE_RIDERS_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+UPDATE language_xx_XX 
+SET Text = 'This unit is excellent at exploring during the early game. Be wary using it to fend off barbarians, however.'
+ WHERE Tag = 'TXT_KEY_UNIT_HELP_SHOSHONE_PATHFINDER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+ 
+UPDATE language_xx_XX 
+SET Text = 'The Pathfinder is the game''s first reconaissance unit. It fights poorly compared to a Warrior, but has better movement and vision.'
+ WHERE Tag = 'TXT_KEY_UNIT_SHOSHONE_PATHFINDER_STRATEGY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+ 
+UPDATE language_xx_XX 
+SET Text = 'Founded cities start with additional territory, and units receive a combat bonus when fighting within their own territory. All Recon units can choose rewards from Ancient Ruins.'
+ WHERE Tag = 'TXT_KEY_TRAIT_GREAT_EXPANSE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 --------------------
 -- Siam
@@ -980,7 +996,7 @@ SET Text = 'Powerful Medieval Mounted Unit, weak to Pikemen. Only the Siamese ma
 WHERE Tag = 'TXT_KEY_UNIT_HELP_SIAMESE_WARELEPHANT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Yields from friendly and allied City-States increased by 75%. The [ICON_STRENGTH] Combat Strength of Allied City-State [ICON_CAPITAL] Capitals is increased by +25%.'
+SET Text = '[ICON_INFLUENCE] Influence with City-States starts at 35. Yields from friendly and allied City-States increased by 75%. +25% to [ICON_STRENGTH] Combat Strength of Allied City-State [ICON_CAPITAL] Capitals.'
 WHERE Tag = 'TXT_KEY_TRAIT_CITY_STATE_BONUSES' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -1066,7 +1082,7 @@ SET Text = 'Maximum [ICON_INTERNATIONAL_TRADE] Trade Routes doubled. Cannot foun
 -- Zulu
 --------------------
 UPDATE language_xx_XX
-SET Text = '+15 XP for all Units. Grants unique promotions to all melee units, and reduces [ICON_STRENGTH] Crime slightly.'
+SET Text = '+15 XP for all Units. Grants unique promotions to all melee units, and reduces [ICON_STRENGTH] Crime slightly. Increases the Military Unit Supply Cap by 2.'
 WHERE Tag = 'TXT_KEY_BUILDING_IKANDA_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_LEADERS' AND Value= 1 );
 
 UPDATE language_xx_XX
