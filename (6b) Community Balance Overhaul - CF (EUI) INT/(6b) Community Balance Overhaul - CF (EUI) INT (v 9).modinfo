@@ -3,7 +3,7 @@
   <Properties>
     <Name>(6b) CBO - Compatibility Files (EUI) Localized</Name>
     <Stability>Beta</Stability>
-    <Teaser>(01-26) [COLOR_GREEN]Translation of Community Balance Overhaul - Compatibility Files (EUI)[ENDCOLOR]</Teaser>
+    <Teaser>(4-20) [COLOR_GREEN]Translation of Community Balance Overhaul - Compatibility Files (EUI)[ENDCOLOR]</Teaser>
     <Description>Translation of the Community Balance Overhaul - Compatibility Files (EUI) into several non-English languages.</Description>
     <Authors>The Community</Authors>
     <HideSetupGame>0</HideSetupGame>
@@ -34,6 +34,7 @@
     <Mod id="828b5b4b-7c62-4afb-a43f-034b596ef5e4" minversion="0" maxversion="999" title="CBP Compatibilty Files (No EUI)" />
   </Blocks>
   <Files>
+    <File md5="82D50FDD655FDCDD34C59A40E87FF91E" import="0">C4DFCompatibility/C4DFCompatibility.sql</File>
     <File md5="2ff9f4ce7fc752f1d3548d765f801b1f" import="0">Corporations/Text/CorpText_xx_XX.xml</File>
     <File md5="798db99420c07e3d79f6efce4adf4e31" import="0">Corporations/Text/CorpText_xx_XX.sql</File>
     <File md5="3f218ed14d9ca07121445aa757435a13" import="0">CSD/CompatibilityText/Compatibility_xx_XX.sql</File>
@@ -45,6 +46,7 @@
   <Actions>
     <OnModActivated>
       <UpdateDatabase>EUI/xx_XX/NeededText.xml</UpdateDatabase>
+	  <UpdateDatabase>C4DFCompatibility/C4DFCompatibility.sql</UpdateDatabase>
 	  <UpdateDatabase>EUI/EUI_text_xx_XX.xml</UpdateDatabase>
 	  <UpdateDatabase>Corporations/Text/CorpText_xx_XX.sql</UpdateDatabase>
       <UpdateDatabase>Corporations/Text/CorpText_xx_XX.xml</UpdateDatabase>
