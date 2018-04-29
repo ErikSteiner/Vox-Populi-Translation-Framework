@@ -409,7 +409,7 @@
 			<Text>2. One of the following conditions:</Text>
 		</Row>
 		<Row Tag="TXT_KEY_VO_INDEPENDENCE_POSSIBLE_CITY_PERCENT_TT">
-			<Text>[TAB][ICON_BULLET]Vassal's team has {1_CityPercent}% or more of Cities when vassalage started. (currently {2_Percent})</Text>
+			<Text>[TAB][ICON_BULLET]Vassal's team has {1_CityPercent}% or less of Cities when vassalage started. (currently {2_Percent})</Text>
 		</Row>
 		<Row Tag="TXT_KEY_VO_INDEPENDENCE_POSSIBLE_POP_PERCENT_TT">
 			<Text>[TAB][ICON_BULLET]Vassal's team has {1_PopPercent}% or more of Population than when vassalage started. (currently {2_Percent})</Text>
