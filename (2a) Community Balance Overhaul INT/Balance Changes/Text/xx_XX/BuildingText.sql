@@ -504,15 +504,15 @@ SET Text = '[ICON_CULTURE] Culture and [ICON_GOLD] Gold costs of acquiring new t
 WHERE Tag = 'TXT_KEY_WONDER_ANGKOR_WAT_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Receive a free Great General. [NEWLINE][NEWLINE]Enemy land Units must expend 1 extra [ICON_MOVES] movement per Tile when entering your territory. Provides Walls for free in the city in which it is built. Upon discovering Dynamite, The Great Wall becomes obsolete.'
+SET Text = 'Receive a free Great General. [NEWLINE][NEWLINE]Enemy land Units expend all [ICON_MOVES] movement when entering your territory. Increases the Military Unit Supply Cap by 3. Provides Walls for free in the city in which it is built.[NEWLINE][NEWLINE]Upon discovering Dynamite, The Great Wall becomes obsolete.'
 WHERE Tag = 'TXT_KEY_WONDER_GREAT_WALL_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'All newly-trained non-air Units in this City receive the [COLOR_POSITIVE_TEXT]Drill I[ENDCOLOR] Promotion, improving [ICON_STRENGTH] combat strength and city attack strength. Provides a free Castle in the city in which it is built. Boosts city [ICON_CULTURE] Culture output by 10%.'
+SET Text = 'Requires completion of Authority Branch. All non-air Units (new and previously-created by this City) receive the [COLOR_POSITIVE_TEXT]Drill I[ENDCOLOR] Promotion, improving [ICON_STRENGTH] combat strength and city attack strength. Provides a free Castle in the city in which it is built. Boosts city [ICON_CULTURE] Culture output by 10%.'
 WHERE Tag = 'TXT_KEY_WONDER_ALHAMBRA_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Reqiures completion of Piety Branch. Receive 50 [ICON_RESEARCH] Science when you expend a [ICON_GREAT_PEOPLE] Great Person. Bonus scales with Era. Provides a free Mosque in the city in which it is built.'
+SET Text = 'Reqiures completion of Tradition Branch. Receive 50 [ICON_RESEARCH] Science when you expend a [ICON_GREAT_PEOPLE] Great Person. Bonus scales with Era. Provides a free Mosque in the city in which it is built.'
 WHERE Tag = 'TXT_KEY_WONDER_MOSQUE_OF_DJENNE_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -522,6 +522,10 @@ WHERE Tag = 'TXT_KEY_BUILDING_MOSQUE_OF_DJENNE' AND EXISTS (SELECT * FROM COMMUN
 UPDATE language_xx_XX
 SET Text = 'As the center of an Islamic scholarly community, the University of Sankore was very different in organization from the universities of medieval Europe. It had no central administration other than the Emperor. It had no student registers but kept copies of its student publishings. It was composed of several entirely independent schools or colleges, each run by a single master or imam. Students associated themselves with a single teacher, and courses took place in the open courtyard of the mosque or at private residences.'
 WHERE Tag = 'TXT_KEY_WONDER_MOSQUE_OF_DJENNE_DESC' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
+
+UPDATE language_xx_XX
+SET Text = 'A free Great Prophet appears. Provides a free Church in the city in which it is built.'
+WHERE Tag = 'TXT_KEY_WONDER_HAGIA_SOPHIA_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
 SET Text = 'Enables you to select a Reformation Belief without the normal prerequisites. Must be built in a Holy City.'
@@ -536,23 +540,23 @@ SET Text = 'The Cathedral of Vasily the Blessed, commonly known as the Cathedral
 WHERE Tag = 'TXT_KEY_WONDER_KREMLIN_DESC' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Must be built in a Holy City. 3 free Missionaries appear. A free Monastery is constructed in the City.'
+SET Text = 'Must be built in a Holy City. 2 free Missionaries appear, and all Missionaries build in this City gain 1 additional Religous Spread action. A free Stupa is constructed in the City.'
 WHERE Tag = 'TXT_KEY_WONDER_BOROBUDUR_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = '+15% [ICON_STRENGTH] combat strength for units fighting in friendly territory, and +10% [ICON_STRENGTH] Defense for all Cities. Provides a free Great Scientist, and a free Castle in the city in which it is built.'
+SET Text = 'Must be built in a Holy City. 2 free Missionaries appear, and all Missionaries build in this City gain 1 additional Religous Spread action. A free Stupa is constructed in the City.'
 WHERE Tag = 'TXT_KEY_WONDER_HIMEJI_CASTLE_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = '+33% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections. City gains +1 [ICON_FOOD] Food, [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith for every Mountain within 3 tiles of the City. [NEWLINE][NEWLINE]City must be built within 2 tiles of a Mountain that is inside your territory.'
+SET Text = '+15% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections. City gains +1 [ICON_FOOD] Food, [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith for every Mountain within 3 tiles of the City. [NEWLINE][NEWLINE]City must be built within 2 tiles of a Mountain that is inside your territory.'
 WHERE Tag = 'TXT_KEY_WONDER_MACHU_PICHU_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 INSERT INTO language_xx_XX (Tag, Text)
-SELECT 'TXT_KEY_BUILDING_NOTRE_DAME_HELP', 'Receive a free Cathedral in the City. Contains two slots for Great Works of Art or Artifacts.[NEWLINE][NEWLINE]+3 [ICON_PEACE] Faith if Themed.'
+SELECT 'TXT_KEY_BUILDING_NOTRE_DAME_HELP', 'Receive a free Cathedral in the City, and starts a [ICON_GOLDEN_AGE] Golden Age. Contains two slots for Great Works of Art or Artifacts.[NEWLINE][NEWLINE]+3 [ICON_PEACE] Faith if Themed.'
 WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Requires completion of Statecraft Branch. Grants 2 additional Delegates in the World Congress for every 8 City-States in the game. Reduces [ICON_HAPPINESS_3] Poverty in all cities.'
+SET Text = 'Requires completion of Progress Branch. Cost of [ICON_GOLD] Gold purchasing in all cities reduced by 15%. Reduces [ICON_HAPPINESS_3] Poverty in all cities.'
 WHERE Tag = 'TXT_KEY_WONDER_FORBIDDEN_PALACE_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -560,15 +564,15 @@ SET Text = 'Length of [ICON_GOLDEN_AGE] Golden Ages increased by 50%. Reduces [I
 WHERE Tag = 'TXT_KEY_WONDER_TAJ_MAHAL_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = '1 free Great Writer appears near the City where the Wonder was built. Contains 2 slots for Great Works of Writing.[NEWLINE][NEWLINE]+5 [ICON_GOLD] Gold if Themed.'
+SET Text = '1 free Great Writer appears near the City where the Wonder was built. Writer, Artist, and Musician Specialists in all Cities gain +1 [ICON_GOLDEN_AGE] Golden Age Points. Contains 2 slots for Great Works of Writing.[NEWLINE][NEWLINE]+10 [ICON_GOLD] Gold if Themed.'
 WHERE Tag = 'TXT_KEY_WONDER_GLOBE_THEATER_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Requires completion of Aesthetics branch. 1 free Great Artist appears near the City where the Wonder was built. Contains 3 slots for Great Works of Art.[NEWLINE][NEWLINE]+5 [ICON_CULTURE] Culture if Themed.'
+SET Text = '1 free Great Artist appears near the City where the Wonder was built. +1 [ICON_CULTURE] Culture from Great Works in all Cities. Contains 3 slots for Great Works of Art.[NEWLINE][NEWLINE]+10 [ICON_CULTURE] Culture if Themed.'
 WHERE Tag = 'TXT_KEY_WONDER_UFFIZI_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'The empire enters a [ICON_GOLDEN_AGE] Golden Age. +1 [ICON_GOLDEN_AGE] Golden Age Points per turn for every 5 [ICON_CITIZEN] Citizens in the City. Reduces [ICON_HAPPINESS_3] Religious Unrest in all cities.'
+SET Text = 'Reqiures completion of Fealty Branch. The empire enters a [ICON_GOLDEN_AGE] Golden Age. +1 [ICON_GOLDEN_AGE] Golden Age Points per turn for every 2 [ICON_CITIZEN] Citizens in the City. Reduces [ICON_HAPPINESS_3] Religious Unrest in all cities.'
 WHERE Tag = 'TXT_KEY_WONDER_PYRAMIDS_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -576,7 +580,7 @@ SET Text = '+10% [ICON_CULTURE] Culture in all Cities. Contains 2 slots for Grea
 WHERE Tag = 'TXT_KEY_WONDER_SISTINE_CHAPEL_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Receive a free Great Engineer and a free Arsenal in the city. Greatly increases the [ICON_STRENGTH] Defense and Hit Points of the city.'
+SET Text = 'Receive a free Great Engineer and a free Arsenal in the city. Greatly increases the [ICON_STRENGTH] Defense and Hit Points of the city, and increases the Military Unit Supply Cap from population by 5% in all Cities.'
 WHERE Tag = 'TXT_KEY_WONDER_RED_FORT_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -588,11 +592,11 @@ SET Text = 'A Great Scientist appears near the City where the Wonder was built. 
 WHERE Tag = 'TXT_KEY_WONDER_PORCELAIN_TOWER_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Requires completion of Imperialism Branch. A Great General appears near the City where the Wonder was built and +15 XP for all Units built in this City. Reduces [ICON_HAPPINESS_3] Crime in all cities.'
+SET Text = 'A Great General appears near the City where the Wonder was built and +15 XP for all Units built in this City. Reduces [ICON_HAPPINESS_3] Crime and increases the Military Unit Supply Cap by 10 in the City where it is built.'
 WHERE Tag = 'TXT_KEY_WONDER_BRANDENBURG_GATE_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = '1 free Great Artist appears near the City where the Wonder was built. Contains 4 slots for Great Works of Art.[NEWLINE][NEWLINE]+8 [ICON_CULTURE] Culture if Themed.'
+SET Text = 'Requires completion of Artistry branch. 1 free Great Artist and 2 free Archaeologists appear near the City where the Wonder was built. Contains 4 slots for Great Works of Art, and provides a free Museum in the City.[NEWLINE][NEWLINE]+15 [ICON_CULTURE] Culture if Themed.'
 WHERE Tag = 'TXT_KEY_WONDER_LOUVRE_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
@@ -600,16 +604,28 @@ SET Text = 'Reduces [ICON_HAPPINESS_3] Boredom in all cities.  [ICON_CULTURE] Cu
 WHERE Tag = 'TXT_KEY_WONDER_EIFFEL_TOWER_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = 'Requires completion of Industry Branch. Cost of [ICON_GOLD] Gold purchasing in all cities reduced by 15%. Reduces [ICON_HAPPINESS_3] Poverty in all cities.'
+SET Text = 'Requires completion of Statecraft Branch. Grants 3 additional Delegates in the World Congress for every 8 City-States in the game. Reduces [ICON_HAPPINESS_3] Poverty in all cities.'
 WHERE Tag = 'TXT_KEY_WONDER_BIG_BEN_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
+
+UPDATE language_xx_XX
+SET Text = 'Palace of Westminster'
+WHERE Tag = 'TXT_KEY_BUILDING_BIG_BEN' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
 SET Text = '+1 [ICON_GOLD] Gold, [ICON_CULTURE] Culture, and [ICON_HAPPINESS_1] Happiness from every Castle.[NEWLINE][NEWLINE]City must be built within 2 tiles of a Mountain that is inside your territory.'
 WHERE Tag = 'TXT_KEY_WONDER_NEUSCHWANSTEIN_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
-SET Text = '1 free Great Musician appears near the City where the Wonder was built. Contains 3 slots for Great Works of Music.[NEWLINE][NEWLINE]+15 [ICON_CULTURE] Culture if Themed.'
+SET Text = 'Requires completion of Industry Branch. 1 free Great Musician appears near the City where the Wonder was built. Contains 3 slots for Great Works of Music. +250 [ICON_CULTURE] Culture when you construct a building in this City, scaling with Era.[NEWLINE][NEWLINE]+15 [ICON_GOLD] Gold if Themed.'
 WHERE Tag = 'TXT_KEY_WONDER_BROADWAY_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
+
+UPDATE language_xx_XX
+SET Text = 'Requires Autocracy. +1 [ICON_HAPPINESS_1] Happiness for every 2 Policies you have adopted. 1 Free Social Policy. Enemy Spies cannot disrupt World Wonder [ICON_PRODUCTION] Production in this City.[NEWLINE][NEWLINE]Receive 10 [ICON_CULTURE] Culture when you pillage a tile, scaling with Era. Must be constructed in a coastal city.'
+WHERE Tag = 'TXT_KEY_WONDER_PRORA_RESORT_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
+
+UPDATE language_xx_XX
+SET Text = 'Requires completion of Imperialism Branch. [ICON_GOLD] Gold cost of upgrading military units reduced by 33%. Owned Spies are much more likely to disrupt Unit [ICON_PRODUCTION] Production via Advanced Actions.'
+WHERE Tag = 'TXT_KEY_WONDER_PENTAGON_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 UPDATE language_xx_XX
 SET Text = '+25 [ICON_TOURISM] Tourism. Hotels provide +2 [ICON_GOLDEN_AGE] Golden Age Points, [ICON_CULTURE] Culture, and [ICON_TOURISM] Tourism.'
